@@ -4,3 +4,5 @@
 *avion.js
 *vehiculo.ts
 *vehiculo.js
+/node_Modules
+*.json
