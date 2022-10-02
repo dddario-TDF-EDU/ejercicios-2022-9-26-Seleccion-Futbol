@@ -15,7 +15,7 @@ export class Persona {
         }
     }
 
-    protected getName(): string {
+    public getName(): string {
         return this.name;
     }
 
