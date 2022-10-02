@@ -2,7 +2,7 @@ export class Persona {
     private name: string;
     private ID: number;
     private contratado: boolean;
-    private sueldo: number;
+    protected sueldo: number;
 
     constructor(auxName : string, auxID : number, auxSueldo?: number) {
         this.name = auxName;
@@ -44,7 +44,7 @@ export class Persona {
         this.sueldo = auxSueldo;
     }
 
-    protected darBono(): void {
+    public darBono(): void {
         this.sueldo += (this.sueldo*0.01);
     }
 
