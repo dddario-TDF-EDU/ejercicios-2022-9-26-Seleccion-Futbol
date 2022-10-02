@@ -4,7 +4,7 @@ export {
     Persona
 }from "./clasePersona.js";
 
-class Futbolista extends Persona {
+export class Futbolista extends Persona {
     private goles: number;
     private asistencias: number;
 
