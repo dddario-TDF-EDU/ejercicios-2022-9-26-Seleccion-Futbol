@@ -34,7 +34,7 @@ export class Entrenador extends Persona {
         this.titulares.splice(index,1);
     }
 
-    public setTitulares(): void {
+    public gestionarTitulares(): void {
         for (let i = 0; i < this.titulares.length; i++ ) {
             console.log ( i + "_ Jugador " + this.titulares[i].getName())
         }
@@ -50,7 +50,7 @@ export class Entrenador extends Persona {
         return this.titulares;
     }
 
-    public setSuplentes(): void {
+    public gestionarSuplentes(): void {
         for (let i = 0; i < this.titulares.length; i++ ) {
             console.log ( i + "_ Jugador " + this.suplentes[i].getName())
         }
