@@ -34,7 +34,7 @@ export class Entrenador extends Persona {
         this.titulares.splice(index,1);
     }
 
-    public getTitulares(): void {
+    public setTitulares(): void {
         for (let i = 0; i < this.titulares.length; i++ ) {
             console.log ( i + "_ Jugador " + this.titulares[i].getName())
         }
@@ -46,7 +46,11 @@ export class Entrenador extends Persona {
         }
     }
 
-    public getSuplentes(): void {
+    public getTitulares(): Futbolista[] {
+        return this.titulares;
+    }
+
+    public setSuplentes(): void {
         for (let i = 0; i < this.titulares.length; i++ ) {
             console.log ( i + "_ Jugador " + this.suplentes[i].getName())
         }
@@ -57,4 +61,9 @@ export class Entrenador extends Persona {
             console.log ("Cambio realizado")
         }
     }
+
+    public getSuplentes(): Futbolista[] {
+        return this.suplentes;
+    }
+
 }
