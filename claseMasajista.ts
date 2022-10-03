@@ -9,7 +9,7 @@ export {
     Futbolista
 }from "./claseFutbolista.js";
 
-class Masajista extends Persona {
+export class Masajista extends Persona {
     private grupoAsignado: Futbolista[];
 
     constructor(auxName : string, auxID : number, auxGrupo: Futbolista[], auxSueldo?: number){

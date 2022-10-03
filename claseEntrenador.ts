@@ -9,7 +9,7 @@ export {
     Futbolista
 }from "./claseFutbolista.js";
 
-class Entrenador extends Persona {
+export class Entrenador extends Persona {
     private titulares: Futbolista[];
     private suplentes: Futbolista[];
 
