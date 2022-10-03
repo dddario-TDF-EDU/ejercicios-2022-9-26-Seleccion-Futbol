@@ -36,7 +36,7 @@ class Masajista extends Persona {
         }
         let readlineSync = require('readline-sync');
         let decision : number = readlineSync.question("Si desea eliminar uno del grupo ingrese el numero correspondiente.");
-        if (decision <= this.grupoAsignado.length) {
+        if (decision <= this.grupoAsignado.length && decision >= 0) {
             this.removeFutbolista(decision);
         }
     }
