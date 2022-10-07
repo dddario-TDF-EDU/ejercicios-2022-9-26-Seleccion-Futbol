@@ -10,7 +10,7 @@ export class Futbolista extends Persona {
 
     constructor(auxName : string, auxID : number, auxSueldo?: number){
         if (auxSueldo === undefined){
-            super(auxName, auxID);
+            super(auxName, auxID, undefined);
         } else {
             super(auxName, auxID, auxSueldo);
         }

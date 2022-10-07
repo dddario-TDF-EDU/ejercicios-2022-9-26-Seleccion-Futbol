@@ -26,11 +26,11 @@ export class Masajista extends Persona {
         this.grupoAsignado.push(auxFutbolista);
     }
 
-    private removeFutbolista(index: number): void {
+    public removeFutbolista(index: number): void {
         this.grupoAsignado.splice(index,1);
     }
 
-    public getGrupo(): void {
+    public gestionGrupo(): void {
         for (let i = 0; i < this.grupoAsignado.length; i++ ) {
             console.log ( i + "_ Jugador " + this.grupoAsignado[i].getName())
         }
@@ -39,6 +39,10 @@ export class Masajista extends Persona {
         if (decision <= this.grupoAsignado.length && decision >= 0) {
             this.removeFutbolista(decision);
         }
+    }
+
+    public getGrupo(): Futbolista[] {
+        return this.grupoAsignado;
     }
 
     public darBono(): void {

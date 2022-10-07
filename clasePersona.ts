@@ -36,7 +36,7 @@ export class Persona {
         return this.contratado;
     }
 
-    protected getSueldo(): number {
+    public getSueldo(): number {
         return this.sueldo; 
     }
 
