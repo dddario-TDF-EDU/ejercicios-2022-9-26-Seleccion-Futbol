@@ -4,12 +4,12 @@ export class Persona {
     private contratado: boolean;
     protected sueldo: number;
 
-    constructor(auxName : string, auxID : number, auxSueldo?: number) {
+    constructor(auxName: string, auxID: number, auxSueldo?: number) {
         this.name = auxName;
         this.ID = auxID;
         this.contratado = true;
         if (auxSueldo === undefined) {
-            this.sueldo = 1000; 
+            this.sueldo = 1000;
         } else {
             this.sueldo = auxSueldo;
         }
@@ -21,7 +21,8 @@ export class Persona {
 
     protected setName(auxName): void {
         this.name = auxName;
-    } 
+    }
+
     protected setContratado(): void {
         this.contratado = true;
         console.log(this.name + " contratado");
@@ -37,7 +38,7 @@ export class Persona {
     }
 
     public getSueldo(): number {
-        return this.sueldo; 
+        return this.sueldo;
     }
 
     protected setSueldo(auxSueldo): void {
@@ -45,7 +46,6 @@ export class Persona {
     }
 
     public darBono(): void {
-        this.sueldo += (this.sueldo*0.01);
+        this.sueldo += (this.sueldo * 0.01);
     }
-
 }
