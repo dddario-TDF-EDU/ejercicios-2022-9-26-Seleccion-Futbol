@@ -2,20 +2,20 @@ import { Persona } from "./clasePersona.js";
 
 export {
     Persona
-}from "./clasePersona.js";
+} from "./clasePersona.js";
 
 export class Futbolista extends Persona {
     private goles: number;
     private asistencias: number;
 
-    constructor(auxName : string, auxID : number, auxSueldo?: number){
-        if (auxSueldo === undefined){
+    constructor(auxName: string, auxID: number, auxSueldo?: number) {
+        if (auxSueldo === undefined) {
             super(auxName, auxID, undefined);
         } else {
             super(auxName, auxID, auxSueldo);
         }
         this.goles = 0;
-        this.asistencias = 0;    
+        this.asistencias = 0;
     }
 
     public setGoles(auxGoles: number): void {
@@ -35,8 +35,7 @@ export class Futbolista extends Persona {
     }
 
     public darBono(): void {
-        let plusRendimiento : number = (Number(this.getAsistencias) + Number(this.getGoles)) / 10;
-        this.sueldo += (this.sueldo * plusRendimiento); 
+        let plusRendimiento: number = (Number(this.getAsistencias) + Number(this.getGoles)) / 10;
+        this.sueldo += (this.sueldo * plusRendimiento);
     }
-
 }
